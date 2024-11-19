@@ -1,0 +1,8 @@
+{% extends 'master.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_filters %}
+{% block content %}
+    <h3>You've been logged out!!!</h3>
+    <a href="{% url 'user-login' %}">Login again</a>
+{% endblock %}
